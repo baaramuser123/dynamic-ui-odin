@@ -1,0 +1,97 @@
+body {
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+
+.container{
+    padding: 3em;
+    text-align: center;
+    width: 200px;
+    justify-self: center;
+}
+
+.container button{
+    width: 100%;
+}
+
+.option{
+    background-color: white;
+    /* display: none; */
+}
+
+#carousel {
+    width: 8000px;
+    /* height: 600px; */
+    background-color: rgb(173, 180, 187);
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: 600px;
+    gap: 50px;
+    position: relative;
+    padding-left: calc(40vw - 300px);
+    right: 0px;
+    transition-property: right;
+    transition-duration: 3s;
+}
+
+#frame {
+    box-sizing: content-box;
+    overflow: hidden;
+    background-color: rgb(173, 180, 187);
+    width: 80vw;
+    height: 600px;
+    justify-self: center;
+    border: 25px groove rgb(148, 80, 16);
+    position: relative;
+}
+
+#circles {
+    margin-top: 1em;
+    justify-content: center;
+    display: flex;
+    gap: 2em;
+}
+
+.circle {
+    background-color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    border: 2px solid black;
+    opacity: 50%;
+}
+
+.circle:hover {
+    opacity: 100%;
+}
+
+#prev {
+    position: absolute;
+    font-size: 40px;
+    left:0;
+    top:40%;
+    height: 100px;
+    align-content: center;
+    background-color: azure;
+    width: 30px;
+    opacity: 50%;
+    text-align: center;
+}
+
+#next {
+    position: absolute;
+    font-size: 40px;
+    right:0;
+    top:40%;
+    opacity: 50%;
+    height: 100px;
+    align-content: center;
+    background-color: azure;
+    width: 30px;
+    text-align: center;
+}
+
+#prev:hover, #next:hover {
+    opacity: 100%;
+}
