@@ -24,4 +24,4 @@ document.addEventListener("click", (event)=>{
     }
 })
 
-// setTimeout(nextSlide, 3000, carouselElement);
+setInterval(nextSlide, 5000, carouselElement);
